@@ -29,7 +29,7 @@ class App extends React.Component {
    }
 
    fetchMovie() {
-      return fetch(`http://www.omdbapi.com/?apikey=c5a24e96&s=${this.state.guess}`).then(response => {return(response.json())}).then(jsonResponse => {
+      return fetch(`https://www.omdbapi.com/?apikey=c5a24e96&s=${this.state.guess}`).then(response => {return(response.json())}).then(jsonResponse => {
          if(jsonResponse.Response === "True") {
             this.setState({
                data: jsonResponse.Search
