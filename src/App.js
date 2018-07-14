@@ -12,7 +12,7 @@ class App extends React.Component {
 
       this.state = {
          guess: 'hello',
-         site: `http://www.omdbapi.com/?apikey=c5a24e96`,
+         site: `https://www.omdbapi.com/?apikey=c5a24e96`,
          data: []
       }
 
